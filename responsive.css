@@ -1,0 +1,237 @@
+/* laptop screen 1300*/
+@media only screen and (max-width: 1300px) {
+    body{
+        overflow-x: hidden;
+    }
+    .office{
+        height: 18rem;
+        width: 18rem;
+        position: relative;
+        /* top: 12rem; */
+        top: 1rem;
+        left: 2rem;
+    }
+    .snip{
+        height: 18rem;
+        width: 18rem;
+        position: relative;
+        top: 15rem;
+        left: 35rem;
+        overflow: hidden!important;
+    }
+    .about pre{
+        font-size: 1rem;
+    }
+    .about .right{
+        margin-left: -5rem;
+    }
+    .pro, .infor{
+        overflow-x: hidden!important;
+        height: 22rem;
+    width: 22rem;
+    }
+/*Big tablets 1200px*/
+@media only screen and (max-width: 1200px) {
+    .office{
+        height: 16rem;
+        width: 16rem;
+        position: relative;
+        /* top: 12rem; */
+        top: 1rem;
+        left: 1.8rem;
+    }
+    .snip{
+        height: 16rem;
+        width: 16rem;
+        position: relative;
+        top: 13rem;
+        left: 34rem;
+        overflow: hidden!important;
+    }
+    .about .right{
+        margin-left: -10rem;
+    }
+    .pro{
+        left: 10rem;
+    }
+    .one, .two, .three{
+    font-size: 1rem;
+    }
+    .three{
+       width: 35%;
+    }
+}
+
+/*small tablets to big tablets from 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+    .office{
+        height: 12rem;
+        width: 12rem;
+        position: relative;
+        /* top: 12rem; */
+        top: 1rem;
+        left: 1.8rem;
+    }
+    .snip{
+        height: 12rem;
+        width: 12rem;
+        position: relative;
+        top: 8rem;
+        left: 17rem;
+        overflow: hidden!important;
+    }
+    section .hero{
+        
+        background-color: red;
+        height: 20rem;
+        font-size: 1.5rem;
+    
+    }
+    .hero-text{
+        text-align: center;
+        position: relative;
+        top: 11rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .tag h4{
+        font-size: 0.8rem;
+        position: relative;
+        top: -3rem;
+        margin-bottom: 10px;
+    }
+    .know{
+        position: relative;
+        top: -3rem;
+        font-size: 0.8rem;
+    }
+    .infor, .pro{
+        display: none;
+    }
+    .right{
+        position: relative;
+        left: 14rem;
+        font-size: 0.7rem;
+    }
+    .left{
+        position: relative;
+        left: 4rem;
+        font-size: 0.7rem;
+        
+    }
+    .btnn #clickme{
+        margin-left: 41%!important;
+    }
+    .head{
+        font-size: 1.5rem;
+    }
+   
+    .foot{
+        display: grid;
+    }
+    .one, .two, .three{
+        width: 80%;
+    }
+    .about h2{
+        margin-top: -2rem;
+        margin-bottom: -1.8rem;
+    }
+
+    }
+}
+
+/*small phones to small tablets 480px to 767px*/
+@media only screen and (max-width: 767px) {
+    
+  }
+
+  /*small phones from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+    .office{
+        height: 10rem;
+        width: 10rem;
+        position: relative;
+        /* top: 12rem; */
+        top: 6rem;
+        left: 9rem;
+    }
+    .snip{
+        /* height: 12rem;
+        width: 12rem;
+        position: relative;
+        top: 8rem;
+        left: 17rem;
+        overflow: hidden!important; */
+        display: none;
+    }
+    section .hero{
+        
+        background-color: red;
+        height: 10rem;
+        font-size: 1.5rem;
+        width: 100%;
+    
+    }
+    .hero-text{
+        text-align: center;
+        position: relative;
+        top: 7rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .tag h4{
+        font-size: 0.8rem;
+        position: relative;
+        top: -3rem;
+        margin-bottom: 10px;
+    }
+    .know{
+        position: relative;
+        top: -2.5rem;
+        font-size: 0.6rem;
+        
+    }
+    .about h2{
+        margin-top: -3rem;
+    }
+    .about{
+        margin-top: 8rem;
+    }
+    .infor, .pro{
+        display: none;
+    }
+    
+    .right{
+        position: relative;
+        left: 14rem;
+        font-size: 0.8rem!important;
+        margin-left: -15rem!important;
+    }
+    .left{
+        position: relative;
+        left: 4rem;
+        font-size: 0.7rem;
+        margin-left: -5rem!important;
+        font-size: 0.7rem!important;
+        
+    }
+    .about .preel{
+        font-size: 0.8rem!important;
+        
+    }
+    .btnn #clickme{
+        margin-left: 37%!important;
+    }
+    .head{
+        font-size: 1.5rem;
+    }
+   
+    .foot{
+        display: grid;
+    }
+    .one, .two, .three{
+        width: 100%;
+    }
+
+}
+}

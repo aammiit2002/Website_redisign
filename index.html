@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <!-- bootstrap links -->
+
+<!-- AOS LINK -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- AOS LINK -->
+<!--Ion Icons cdn-->
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<!--Ion Icons cdn-->
+<!--Jquery link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--Jquery link-->
+<!---Css file link-->
+<link rel="stylesheet" href="style.css">
+<!--css file link-->
+<link rel="stylesheet" href="responsive.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <header>
+    <!-- nav bar -->
+    <nav class="navbar navbar-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" data-aos-easing="ease-in-out"><img src="logo.png" alt="" height="50px" width="300px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><ion-icon name="compass"></ion-icon> EXPLORE</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SERVICES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#"><ion-icon name="logo-buffer"></ion-icon> Custom Software Development</a></li>
+                    <li><a class="dropdown-item" href="#"><ion-icon name="code-slash"></ion-icon> Web Design and Development</a></li>
+                    <li><a class="dropdown-item" href="#"><ion-icon name="phone-portrait"></ion-icon> App Development</a></li>
+                    <li><a class="dropdown-item" href="#"><ion-icon name="cloud-done"></ion-icon> Cloud/Server maintenance</a></li>
+                    <li><a class="dropdown-item" href="#"><ion-icon name="search"></ion-icon> Search Engine Optimisation</a></li>
+                    <!-- <li>
+                      <hr class="dropdown-divider">
+                    </li> -->
+                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CONTACT & TERMS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#"><ion-icon name="call"></ion-icon> Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#"><ion-icon name="flag"></ion-icon> Terms & Conditions</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      LOGIN/REGISTER
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="#"><ion-icon name="log-in"></ion-icon> LOGIN</a></li>
+                      <li><a class="dropdown-item" href="#"><ion-icon name="person-add"></ion-icon> REGISTER</a></li>
+                      <li><a class="dropdown-item" href="#"><ion-icon name="star"></ion-icon> Diwali Registration Offer</a></li>
+
+                    </ul>
+                  </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero" style="background-color: #FD6969;">
+        <h1 class="hero-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Online business is now easier <br> with Delgon Technologies</h1>
+        <img class="office" src="office.svg" alt="">
+        <img class="snip" src="snippet.svg" alt="">
+       <div class="tag">
+        <h4>Contact us today to level up your business</h3>
+        <a class="know" href="#">Know More</a>
+       </div>
+    </section>
+    <section class="about" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <br><br>
+        <h2><img src="eye2.gif" alt="" width="80px" height="80px"> ABOUT US</h2>
+     <div class="first">
+        
+            <div class="profile">
+                <img class="pro" src="profile.svg" alt="" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+            </div>
+            <div style="margin-top: 25px;">
+            <pre class="right" style=" font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Montserrat', sans-serif;">
+               Delgon Technologies Is A Software Development Company
+               Established In India In 2014 (Based In Kakinada The Fastest
+               Growing Smart City In Andhra Pradesh, India).
+       
+               We Are Specialized In Web Design And Development, Mobile
+               App Development, Web And Mobile App Hosting Services.
+       
+               Delgon Technologies Consists Of Professional Employees
+               With An Advanced Knowledge Of Respective Fields.
+       
+               We Have A Great Exposure Of Latest Technologies Like
+               ASP.NET / SQL / Access / PHP / MySQL / Adobe Photoshop /
+               CorelDraw And Various Popular CMS For Instance Drupal /
+               Joomla / WordPress, E-Commerce Solutions, Graphic Design,
+               Multimedia (Or) SEO Services.
+       
+            </pre>
+        </div>
+            </div>
+            <div class="second">
+            
+            <div class="left">
+           <pre style=" font-family: 'Josefin Sans', sans-serif;
+           font-family: 'Lato', sans-serif;
+           font-family: 'Montserrat', sans-serif;" class="preel">
+               We Are Passionate To Create Value “The Right People, The
+               Right Technology, The Right Infrastructure, The Right
+               Experience”. These Key Factors Have Contributed To The
+               Success Of Delgon Technologies , In Meeting The Needs 
+               Of Its Clients.
+       
+               The Strategy Of Our Business Development Is The 
+               Commitment For Producing Effective, Secure, Process 
+               Oriented And Cost Effective Software Solutions And 
+               Services. We Blend Our Work With The Best And Updated 
+               Technologies To Deliver Superior, Cost-Effective Results To 
+               Capitalize Clients, Competitive Advantage And Productivity.
+       
+               We Also Provide Training And Internship In Software 
+               Development To The Unemployed And Students Who Are 
+               Seeking For Better Future.
+           </pre>
+            </div>
+            <div class="info">
+                <img class="infor" src="info.svg" alt="" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <br><br>
+     <h2><img src="setting.gif" alt="" height="60px" width="60px">
+         WHAT WE DO</h2><br>
+     <p>We Are Specialized In App Development, Cloud / Server Maintenance, Search Engine Optimization & Much More..</p>
+    <br>
+     
+      <div class="card mb-3" style="width: 80%; margin: 0 auto;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="webd.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Web Design & Development</h3>
+              <p class="card-text">Through Years Of Experience, Research & Improvements, We Know What Works. Trust The Pros At Delgon Technologies To Design A Fully Custom Website Just For Your Business.</p>
+              <a href="#" class="btn-touch">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3" style="width: 80%; margin: 0 auto;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="app.svg" class="img-fluid rounded-start" alt="..." style="height: 17rem;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Mobile App Development</h3>
+              <p class="card-text">When It Comes To Our Mobile App Design & Development Process For Iphone, Android & Windows Apps, We Put The Customer In The Center Of The Experience. Our Startup & Enterprise Mobile Apps Are Always Stylish, Refined & Elegant.</p>
+              <a href="#" class="btn-touch">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3" style="width: 80%; margin: 0 auto;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="ecom.svg" class="img-fluid rounded-start" alt="..." style="height: 17rem;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">E - Commerce Solutions</h3>
+              <p class="card-text">Each E - Commerce Website That We Create Ensures That Our Clients Are Playing Their Biggest Game. E - Commerce Websites Are Global Flagships To An Increasingly International Online Customer Base.</p>
+              <a href="#" class="btn-touch">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3" style="width: 80%; margin: 0 auto;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="domain.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Domain & Web Hosting</h3>
+              <p class="card-text">We Offer Virtually Every Top Level Domain On The Web. When You Search For The Perfect Name, We’ll Include Related Domains In The Results So You Can Get A Better Idea Of All The Options That Are Available From Standards Like .COM & .NET To Specialized Domains Like .BIZ, .ME & Many Others.</p>
+              <a href="#" class="btn-touch">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3" style="width: 80%; margin: 0 auto;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="seo.svg" class="img-fluid rounded-start" alt="..." style="height: 17rem;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Search Engine Optimization</h3>
+              <p class="card-text">We Provide A Wide Range Of Search Engine Promotion Services To Generate & Drive In High Numbers Of Visitor Traffic To One's Website. This Is An Effective Way To Ensure That Your Website Attains Higher Rankings On The Search Engine Results.</p>
+              <a href="#" class="btn-touch">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3" style="width: 80%; margin: 0 auto;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="content.svg" class="img-fluid rounded-start" alt="..." style="height: 17rem;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Content Writing & Maintenance</h3>
+              <p class="card-text">Content Of A Website Should Be Fresh & Up To Date. It Keeps Visitors Attracted & Google Happy. To Assist You In Hosting, Maintaining Your Website & Your Online Presence, We Have Packages That Suit Your Updates & Requirements.</p>
+              <a href="#" class="btn-touch">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </section>
+
+    <!--contact us section-->
+<section class="contact" style="background-color: #212529; ">
+    <br> <br>
+<h2 style="font-weight: 600;">GET IN TOUCH</h2>
+
+<div class="show">
+<h4 style="color: white; text-align: center;">Need Help? Call or Whatsapp us</h4>
+<p style="color: white; text-align: center;">We Can Speak English, Hindi & Telugu. Get In Touch with us on Whatsapp @ +91 83280 79528</p>
+<div class="btnn">
+    <a id="clickme" href="#" onclick='return false;' style="">Message us</a>
+</div>
+<br>
+</div>
+<div class="contactForm" id="form" style="display: none;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in"data-aos="fade-out" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-in">
+    <form action="" >
+        <div class="inputGroup inputGroup1">
+          <input class="inputGroup__textfield" type="text" name="" value="" placeholder="Firstname*" required data-value-missing="Please fill out this field.">
+        </div>
+
+        <div class="inputGroup inputGroup2">
+          <input class="inputGroup__textfield" type="text" name="" value="" placeholder="Lastname*" required data-value-missing="Please fill out this field.">
+        </div>
+
+        <div class="inputGroup inputGroup3">
+          <input class="inputGroup__textfield" type="text" name="" value="" placeholder="Email*" required data-value-missing="Please fill out this field.">
+        </div>
+
+        <div class="inputGroup inputGroup4">
+          <input class="inputGroup__textfield" type="text" name="" value="" placeholder="Phone*" required data-value-missing="Please fill out this field.">
+        </div>
+
+        <div class="inputGroup inputGroup5">
+          <input class="inputGroup__textfield" type="text" name="" value="" placeholder="Company">
+        </div>
+
+        <div class="inputGroup inputGroup6">
+          <textarea class="inputGroup__textfield" name="name" rows="8" placeholder="How can we help?*" required data-value-missing="Please fill out this field."></textarea>
+        </div>
+
+        <div class="inputGroup inputGroup7" >
+          <button  type="submit" name="button" class="btn-submit" style="margin: 0 auto;">Send</button>
+        </div>
+        
+    </form>
+    <br><br>
+</div>
+</section>
+    <!--contact us section ends-->
+<!--footer starts-->
+<footer class="foot">
+    <div class="one">
+        <br><br>
+
+<pre style="color: black;">
+    <span style="" class="head">Address</span>
+
+    <ion-icon name="location-outline"></ion-icon> <span class="cont" style="color: red; font-weight: 500;">Delgon Technologies ,
+        D.No 5-2-42/A, First Floor,
+        Opp St. Anthony's Primary School,
+        Suryarao Pet,
+        Kakinada - 533005.</span>
+
+    <ion-icon name="call-outline"></ion-icon> <span style="font-weight: 500; color: red; font-weight: 600;">+91 83280 79 528</span>
+
+    <ion-icon name="mail-outline"></ion-icon> <span style="font-weight: 500; color: red; font-weight: 600;">info@delgon.co</span>
+
+    <ion-icon name="time-outline"></ion-icon> <span style="font-weight: 500; color: red; font-weight: 500;">Monday - Friday : 09 : 00 - 18 : 00
+        Saturday, Sunday : Closed</span>
+</pre>
+    </div>
+
+    <div class="two">
+        <br><br>
+        
+        <pre>
+            <span style="font-size: 1.5rem; font-weight: 600; color: black;">Quick Links</span>
+
+            <a href="#">Home</a>
+            <a href="#">Blogs</a>
+            <a href="#">Services</a>
+            <a href="#">About us</a>
+            <a href="#">Login/Register</a>
+        </pre>
+        <div>
+            <pre><span style="font-size: 1.5rem; font-weight: 600; color: black ; margin-left: 3rem;">Social Media Handles</span></pre>
+            <br>
+            <div class="icons" style="margin: 0 auto;">
+            <div>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <div>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="three">
+        <br><br>
+       
+       <pre>
+            <span style="font-size: 1.5rem; font-weight: 600; color: black;">Latest from our blogs</span>
+
+            <a href="#">Single Vendor E-commerce Software</a>
+            <span><ion-icon name="time-outline"></ion-icon>Oct 29, 2021 <ion-icon name="pricetag-outline"></ion-icon>Portfolio</span>
+            
+            <a href="#">Loan Management Software</a>
+            <span><ion-icon name="time-outline"></ion-icon>Oct 29, 2021 <ion-icon name="pricetag-outline"></ion-icon>Portfolio</span>
+            
+            <a href="#">Garage Management software</a>
+            <span><ion-icon name="time-outline"></ion-icon>Oct 28, 2021 <ion-icon name="pricetag-outline"></ion-icon>Portfolio</span>
+            
+            <a href="#">Freelance CRM software</a>
+            <span><ion-icon name="time-outline"></ion-icon>Oct 28, 2021 <ion-icon name="pricetag-outline"></ion-icon>Portfolio</span>
+       </pre>
+    </div>
+</footer>
+<!--footer ends-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Montserrat:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-size: 1em;
+    line-height: 1.65714286em;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+ion-icon{
+    vertical-align: center;
+    margin-bottom: -2px;
+}
+.navbar-brand{
+   /* margin: 0 auto; */
+   margin-left: 3%;
+}
+.navbar{
+    background-color: ivory;
+}
+section .hero{
+    /* background-image: url('bg-int.jpeg'); */
+    /* background: linear-gradient(-55deg, #b85ef0 100%, #c499e7 5%); */
+    background-color: red;
+    height: 40rem;
+
+}
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 16rem;
+}
+.office{
+    height: 22rem;
+    width: 22rem;
+    position: relative;
+    /* top: 12rem; */
+    top: 1rem;
+    left: 8rem;
+}
+.snip{
+    height: 20rem;
+    width: 22rem;
+    position: relative;
+    top: 15rem;
+    left: 41rem;
+    overflow: hidden;
+}
+.tag{
+    position: relative;
+    top: 8rem;
+    text-align: center;
+}
+.tag h4{
+    margin-bottom: 25px;
+}
+.know{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+.about{
+    margin-top: 13%;
+    background-color: rgb(243, 165, 76);
+   
+}
+.about h2{
+    /* margin-bottom: -15px; */
+    text-align: center;
+    font-weight: 600;
+}
+.first{
+    display: flex;
+}
+.second{
+    display: flex;
+}
+.infor{
+    
+}
+.infor, .pro{
+    height: 25rem;
+    width: 25rem;
+}
+.pro{
+    position: relative;
+    left: 15rem;
+}
+.right{
+    position: relative;
+    left: 20rem;
+}
+.left{
+    float: left;
+   
+}
+pre{
+    color: white;
+    border-radius: 5px;
+    margin: 0px;
+    font-size: 18px;
+}
+.services{
+    background-color: #F4D03F;
+}
+.services h2,p{
+    text-align: center;
+}
+.services h2{
+    font-weight: 600;
+}
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+
+    background-color: #f1f1f1;
+    
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 14px 28px, rgba(0, 0, 0, 0.55) 0px 10px 10px;
+  } 
+  .btn-touch{
+      text-decoration: none;
+      padding: 8px 12px 8px 12px;
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+      width: 30%;
+      font-size: 0.8rem;
+      margin: 0 auto;
+      font-weight: 600;
+  }
+  .card-body p{
+      text-align: left;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+  }
+  .card-body h3{
+      font-weight: 700;
+  }
+  .contact h2{
+      color: white;
+      text-align: center;
+  }
+  
+  .contactForm {
+    width: calc(100% - 20px);
+    max-width: 700px;
+    margin: 0 auto;
+}
+.btnn #clickme{
+    color: white; text-decoration: none;background-color: red; font-weight: 600; padding: 8px 12px 8px 12px; margin-left: 47%; border-radius: 8px;
+}
+
+/* STYLES FOR FORM */
+form {
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    padding-top: 20px;
+}
+
+.inputGroup {
+    width: 100%;
+    position: relative;
+}
+
+  .inputGroup1 {
+      grid-column: 1;
+      grid-row: 1;
+  }
+  .inputGroup2 {
+      grid-column: 2;
+      grid-row: 1;
+  }
+  .inputGroup3 {
+      grid-column: 1;
+      grid-row: 2;
+  }
+  .inputGroup4 {
+      grid-column: 2;
+      grid-row: 2;
+  }
+  .inputGroup5 {
+      grid-column: 1 / span 2;
+      grid-row: 3;
+  }
+  .inputGroup6 {
+      grid-column: 1 / span 2;
+      grid-row: 4;
+  }
+  .inputGroup7 {
+      grid-column: 1 / span 2;
+      grid-row: 5;
+      text-align: center;
+  }
+  .foot span{
+      color: black;
+      
+
+  }
+  .foot a{
+      text-decoration: none;
+      color: red;
+  }
+
+
+.inputGroup__textfield {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+    border: 1px solid #FFF;
+    outline: 0;
+    border-radius: 0;
+    transition: border 0.3s ease-in-out;
+
+}
+  .inputGroup__textfield:focus, .inputGroup__textfield:active {
+      border: 1px solid #D9D9D9;
+  }
+
+
+.btn-submit {
+    padding: 6px;
+    width: 50%;
+    border: 0;
+    background: red;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+
+}
+
+  button .btn-submit:hover {
+      box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
+  }
+
+
+/* STYLES FOR VALIDATION WARNING */
+.hf-warning {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    transform: translate(-15%, -50%) !important;
+    background: orangered !important;
+    display: inline-block !important;
+    padding: 7px 14px !important;
+    color: #FFFFFF !important;
+    font-size: 11px !important;
+    font-family: sans-serif;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1) !important;
+    border: 0 !important;
+    border-radius: 2px !important;
+}
+
+  .hf-warning:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: orangered;
+      position: absolute;
+      z-index: 1;
+      bottom: -5px;
+      right: 15px;
+      transform: rotate(45deg);
+  }
+
+
+@media screen and (max-width: 480px) {
+    form {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+
+    form > div {
+      margin-bottom: 30px;
+    }
+}
+.foot{
+    display: flex;
+    background-color: #FADBD8;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.one, .two, .three{
+    
+    width: 30%;
+    text-align: left;
+    margin: 0 auto;
+}
+.one h3{
+    text-align: center;
+}
+.three h3{
+    text-align: center;
+}
+div .icons {
+    display: flex;
+    margin-left: 4.5rem!important;
+    
+}
+.foot .one .cont{
+    font-size: 1rem; font-weight: 500; color: black;
+}
+.head{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+}
+.icons ion-icon{
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: red;
+
+}
+pre{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
